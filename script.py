@@ -1,0 +1,46 @@
+import csv
+import random
+import webbrowser
+import os
+
+# other functions
+def numRows(data):
+	for j in range(1,4):
+		if len(data[j])==0:
+			return(j)
+
+# read the input file
+
+print('Reading file sinfo.csv')
+csvfile = open('sinfo.csv','rb')
+csvreader = csv.reader(csvfile)
+file = list(csvreader)
+
+# file[1:] are all the rows
+order = range(1,len(file))
+random.shuffle(order)
+# pick a random row
+for i in range(0,len(order)):
+	row = order[i]
+	# check how many entires it has
+	curEnt = numRows(file[row]) 
+	if curEnt < 3:
+		# if less than 3, run the row
+		print('Check participant #' + file[row][0])
+		webbrowser.open('file://'+os.getcwd()+'/slow_gifs/'+file[row][0]+'.gif')
+		quality = raw_input("Quality? [-1/0/1/e/c]")
+		if quality=='e':
+			break
+		if quality=='c':
+			print('Current comment: ' + file[row][4])
+			comment = raw_input("Comment: ")
+			if len(comment)>0:
+				file[row][4] = comment
+			quality = raw_input("Quality? [-1/0/1/e/c]")
+		file[row][curEnt] = quality
+
+print('Writing file sinfo.csv')
+outfile = open('sinfo.csv','wb')
+csvwriter = csv.writer(outfile)
+csvwriter.writerows(file)
+print('Ending')
