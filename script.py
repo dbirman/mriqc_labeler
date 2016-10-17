@@ -26,6 +26,7 @@ for i in range(1,len(file)):
 			finished[j-1] = finished[j-1]+1
 finished = np.divide(np.round(np.divide(finished, total) * 1000),10)
 print('Completed: ' + str(finished[0]) + '% ' + str(finished[1]) + '% ' + str(finished[2]) + '%')
+print('Total: ' + str(np.round(np.divide(np.sum(finished),3))) + '%')
 stop = raw_input("Waiting: [enter]")
 
 # file[1:] are all the rows
