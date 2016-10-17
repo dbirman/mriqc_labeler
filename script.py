@@ -36,8 +36,8 @@ for i in range(0,len(order)):
 	row = order[i]
 	# check how many entires it has
 	curEnt = numRows(file[row]) 
-	if curEnt < 3:
-		# if less than 3, run the row
+	if curEnt < 2:
+		# if less than 2, run the row
 		print('Check participant #' + file[row][0])
 		webbrowser.open('file://'+os.getcwd()+'/slow_gifs/'+file[row][0]+'.gif')
 		quality = raw_input("Quality? [-1/0/1/e/c] ")
