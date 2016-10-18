@@ -40,19 +40,21 @@ for i in range(0,len(order)):
 	if curEnt < 2:
 		# if less than 2, run the row
 		print('Check participant #' + file[row][0])
-		webbrowser.open('file://'+os.getcwd()+'/slow_gifs/'+file[row][0]+'.gif')
-		quality = raw_input("Quality? [-1/0/1/e/c] ")
-		if quality=='e':
-			break
-		if quality=='c':
-			print('Current comment: ' + file[row][4])
-			comment = raw_input("Comment: ")
-			if len(comment)>0:
-				file[row][4] = comment
-			quality = raw_input("Quality? [-1/0/1/e] ")
-		if quality=='e':
-			break
-		file[row][curEnt] = quality
+		fname = os.getcwd()+'/slow_gifs/'+file[row][0]+'.gif'
+		if os.path.isfile(fname):
+			webbrowser.open('file://'+fname)
+			quality = raw_input("Quality? [-1/0/1/e/c] ")
+			if quality=='e':
+				break
+			if quality=='c':
+				print('Current comment: ' + file[row][4])
+				comment = raw_input("Comment: ")
+				if len(comment)>0:
+					file[row][4] = comment
+				quality = raw_input("Quality? [-1/0/1/e] ")
+			if quality=='e':
+				break
+			file[row][curEnt] = quality
 
 print('Writing file sinfo.csv')
 outfile = open('sinfo.csv','wb')
