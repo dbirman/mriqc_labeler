@@ -9,6 +9,7 @@ def numRows(data):
 	for j in range(1,4):
 		if len(data[j])==0:
 			return(j)
+	return(4)
 
 # read the input file
 
@@ -37,8 +38,8 @@ for i in range(0,len(order)):
 	row = order[i]
 	# check how many entires it has
 	curEnt = numRows(file[row]) 
-	if curEnt < 2:
-		# if less than 2, run the row
+	if curEnt <= 3:
+		# if less than 3, run the row
 		print('Check participant #' + file[row][0])
 		fname = os.getcwd()+'/slow_gifs/'+file[row][0]+'.gif'
 		if os.path.isfile(fname):
