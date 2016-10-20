@@ -3,6 +3,8 @@ import random
 import webbrowser
 import os
 import numpy as np
+import scipy
+from scipy import stats
 
 # other functions
 def numRows(data):
@@ -35,10 +37,13 @@ idxs = np.nonzero(hold[1,])
 a = hold[0,idxs]
 b = hold[1,idxs]
 c = hold[2,idxs]
+a = a[0]
+b = b[0]
+c = c[0]
 if finished[2]>0:
-	print('Current intra-rater reliability: ' + str(np.round(np.corrcoef(a,b)[0,1]*100)) + '% and ' + str(np.round(np.corrcoef(b,c)[0,1]*100)) + '%')
+	print('Current intra-rater reliability: ' + str(np.round(scipy.stats.spearmanr(a,b)[0]*100)) + '% and ' + str(np.round(scipy.stats.spearmanr(b,c)[0]*100)) + '%')
 else:
-	print('Current intra-rater reliability: ' + str(np.round(np.corrcoef(a,b)[0,1]*100)) + '%')
+	print('Current intra-rater reliability: ' + str(np.round(scipy.stats.spearmanr(a,b)[0]*100)) + '%')
 
 stop = raw_input("Waiting: [enter]")
 
