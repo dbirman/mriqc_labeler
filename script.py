@@ -23,6 +23,7 @@ file = list(csvreader)
 # display statistics
 finished = [0.,0.,0.]
 hold = np.zeros((3,len(file)-1))
+hold[:] = np.nan
 total = len(file)
 for i in range(1,len(file)):
 	for j in range(1,4):
@@ -33,13 +34,10 @@ finished = np.divide(np.round(np.divide(finished, total) * 1000),10)
 print('Completed: ' + str(finished[0]) + '% ' + str(finished[1]) + '% ' + str(finished[2]) + '%')
 print('Total: ' + str(np.round(np.divide(np.sum(finished),3))) + '%')
 # compute correlation for 1-2
-idxs = np.nonzero(hold[1,])
+idxs = np.invert(np.isnan(hold[1,]))
 a = hold[0,idxs]
 b = hold[1,idxs]
 c = hold[2,idxs]
-a = a[0]
-b = b[0]
-c = c[0]
 if finished[2]>0:
 	print('Current intra-rater reliability: ' + str(np.round(scipy.stats.spearmanr(a,b)[0]*100)) + '% and ' + str(np.round(scipy.stats.spearmanr(b,c)[0]*100)) + '%')
 else:

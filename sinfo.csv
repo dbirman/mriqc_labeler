@@ -6,7 +6,7 @@ sub-10189,,,,
 sub-10193,-1,-1,-1,artifactsmoothlowquality
 sub-10195,-1,0,,smootherror
 sub-10206,,,,
-sub-10217,0,,,
+sub-10217,0,-1,,lowquality
 sub-10225,,,,
 sub-10227,,,,
 sub-10228,0,,,smooth
@@ -23,7 +23,7 @@ sub-10299,,,,
 sub-10304,,,,
 sub-10316,-1,-1,,lowqualitysmoothartifact
 sub-10321,,,,
-sub-10325,0,,,
+sub-10325,0,0,,artifact
 sub-10329,0,,,
 sub-10339,0,,,smooth
 sub-10340,0,,,
@@ -36,7 +36,7 @@ sub-10365,,,,
 sub-10370,,,,
 sub-10376,-1,,,lowquality
 sub-10377,,,,
-sub-10388,,,,
+sub-10388,0,,,
 sub-10428,,,,
 sub-10429,-1,,,artifact
 sub-10438,,,,
@@ -116,7 +116,7 @@ sub-11061,,,,
 sub-11062,,,,
 sub-11066,1,,,
 sub-11067,,,,
-sub-11068,1,1,,
+sub-11068,1,1,1,
 sub-11077,,,,
 sub-11082,0,1,,
 sub-11088,0,,,smooth
@@ -156,7 +156,7 @@ sub-50025,-1,,,lowquality
 sub-50027,0,,,
 sub-50029,-1,,,lowqualityartifact
 sub-50032,-1,,,artifact
-sub-50033,-1,,,lowqualityartifact
+sub-50033,-1,-1,,lowqualityartifact
 sub-50034,0,,,
 sub-50035,,,,
 sub-50036,-1,,,lowqualityartifact
@@ -179,7 +179,7 @@ sub-50057,-1,,,lowquality
 sub-50058,0,1,,smooth
 sub-50059,0,0,,smooth
 sub-50060,-1,,,smooth
-sub-50061,,,,
+sub-50061,-1,,,lowquality
 sub-50062,,,,
 sub-50063,-1,-1,,artifact
 sub-50064,0,,,
@@ -196,7 +196,7 @@ sub-50081,,,,
 sub-50083,1,,,
 sub-50085,,,,
 sub-60001,,,,
-sub-60005,,,,
+sub-60005,0,,,smooth
 sub-60006,,,,
 sub-60008,0,0,,
 sub-60010,,,,
@@ -208,7 +208,7 @@ sub-60016,,,,
 sub-60017,-1,,,
 sub-60020,,,,
 sub-60021,-1,0,,ghosting
-sub-60022,,,,
+sub-60022,0,,,
 sub-60028,,,,
 sub-60030,,,,
 sub-60033,1,,,
@@ -239,14 +239,14 @@ sub-60074,-1,,,
 sub-60076,0,,,artifact
 sub-60077,,,,
 sub-60078,-1,,,smooth
-sub-60079,0,,,
+sub-60079,0,-1,,lowqualitysmooth
 sub-60080,-1,,,lowquality
 sub-60084,,,,
 sub-60087,-1,-1,,lowquality
 sub-60089,1,,,
 sub-70001,,,,
 sub-70002,-1,,,lowquality
-sub-70004,,,,
+sub-70004,0,,,
 sub-70007,-1,-1,,lowquality
 sub-70010,0,,,lowquality
 sub-70013,,,,
@@ -263,15 +263,15 @@ sub-70035,,,,
 sub-70036,,,,
 sub-70037,,,,
 sub-70040,0,,,smooth
-sub-70045,0,,,
+sub-70045,0,-1,,lowquality
 sub-70046,1,-1,,smooth
 sub-70048,-1,,,
-sub-70049,0,,,
+sub-70049,0,-1,,
 sub-70051,,,,
 sub-70052,,,,
 sub-70055,,,,
 sub-70057,,,,
-sub-70058,,,,
+sub-70058,0,,,smooth
 sub-70060,,,,
 sub-70061,,,,
 sub-70065,,,,
