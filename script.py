@@ -39,9 +39,9 @@ a = hold[0,idxs]
 b = hold[1,idxs]
 c = hold[2,idxs]
 if finished[2]>0:
-	print('Current intra-rater reliability: ' + str(np.round(scipy.stats.spearmanr(a,b)[0]*100)) + '% and ' + str(np.round(scipy.stats.spearmanr(b,c)[0]*100)) + '%')
+	print('Current intra-rater reliability: ' + str(np.round(scipy.stats.spearmanr(a,b)[0]*100)/100) + ' and ' + str(np.round(scipy.stats.spearmanr(b,c)[0]*100)/100))
 else:
-	print('Current intra-rater reliability: ' + str(np.round(scipy.stats.spearmanr(a,b)[0]*100)) + '%')
+	print('Current intra-rater reliability: ' + str(np.round(scipy.stats.spearmanr(a,b)[0]*100)/100))
 
 stop = raw_input("Waiting: [enter]")
 
