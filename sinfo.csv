@@ -218,7 +218,7 @@ sub-60038,0,,,lowquality
 sub-60042,0,,,error
 sub-60043,0,,,
 sub-60045,0,,,
-sub-60046,,,,
+sub-60046,0,,,
 sub-60048,0,,,smooth
 sub-60049,0,,,smooth
 sub-60051,0,1,1,smooth
@@ -277,7 +277,7 @@ sub-70061,,,,
 sub-70065,0,,,artifact
 sub-70068,,,,
 sub-70069,-1,,,
-sub-70070,,,,
+sub-70070,0,,,artifact
 sub-70072,0,,,
 sub-70073,,,,
 sub-70074,0,0,,
