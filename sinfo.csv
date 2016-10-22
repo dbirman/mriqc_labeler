@@ -41,12 +41,12 @@ sub-10428,,,,
 sub-10429,-1,-1,-1,lowqualityartifact
 sub-10438,,,,
 sub-10440,0,,,
-sub-10448,,,,
+sub-10448,0,,,lowqualityerror
 sub-10455,0,0,-1,lowquality
 sub-10460,,,,
 sub-10471,0,,,smooth
 sub-10478,0,,,
-sub-10487,0,,,smooth
+sub-10487,0,1,,smooth
 sub-10492,0,-1,,artifact
 sub-10501,,,,
 sub-10506,0,,,lowquality
@@ -64,7 +64,7 @@ sub-10624,-1,,,smooth
 sub-10629,-1,,,
 sub-10631,-1,,,error
 sub-10638,0,,,smooth
-sub-10668,0,0,,artifact
+sub-10668,0,0,1,artifact
 sub-10672,0,1,1,
 sub-10674,0,1,0,
 sub-10678,0,,,
@@ -88,7 +88,7 @@ sub-10785,,,,
 sub-10788,,,,
 sub-10844,,,,
 sub-10855,,,,
-sub-10871,,,,
+sub-10871,1,,,
 sub-10877,,,,
 sub-10882,-1,-1,,lowqualityartifact
 sub-10891,-1,,,lowqualityerror
@@ -113,7 +113,7 @@ sub-11050,-1,,,lowquality
 sub-11052,-1,,,error
 sub-11059,-1,,,
 sub-11061,0,,,artifact
-sub-11062,-1,,,lowqualityartifactsmooth
+sub-11062,-1,-1,,lowqualityartifactsmooth
 sub-11066,1,,,
 sub-11067,,,,
 sub-11068,1,1,1,
@@ -158,8 +158,8 @@ sub-50029,-1,,,lowqualityartifact
 sub-50032,-1,,,artifact
 sub-50033,-1,-1,,lowqualityartifact
 sub-50034,0,,,
-sub-50035,1,,,
-sub-50036,-1,,,lowqualityartifact
+sub-50035,1,1,,
+sub-50036,-1,0,,lowqualityartifact
 sub-50038,,,,
 sub-50042,0,1,,
 sub-50043,-1,,,smooth
@@ -200,7 +200,7 @@ sub-60005,0,,,smooth
 sub-60006,-1,,,lowqualityartifact
 sub-60008,0,0,0,lowqualityartifact
 sub-60010,,,,
-sub-60011,1,-1,,smooth
+sub-60011,1,-1,0,smooth
 sub-60012,-1,-1,,lowquality
 sub-60014,,,,
 sub-60015,,,,
@@ -268,7 +268,7 @@ sub-70046,1,-1,0,smooth
 sub-70048,-1,,,
 sub-70049,0,-1,1,
 sub-70051,,,,
-sub-70052,,,,
+sub-70052,0,,,
 sub-70055,,,,
 sub-70057,,,,
 sub-70058,0,1,,smooth
@@ -282,8 +282,8 @@ sub-70072,0,,,
 sub-70073,,,,
 sub-70074,0,0,,
 sub-70075,,,,
-sub-70076,,,,
-sub-70077,0,,,
+sub-70076,0,,,smooth
+sub-70077,0,1,,
 sub-70079,0,1,,smooth
 sub-70080,0,,,smooth
 sub-70081,,,,
