@@ -2,11 +2,11 @@ participant_id,check-1,check-2,check-3,comments
 sub-10150,,,,
 sub-10159,,,,
 sub-10171,,,,
-sub-10189,,,,
+sub-10189,0,,,
 sub-10193,-1,-1,-1,artifactsmoothlowquality
 sub-10195,-1,0,,smootherror
 sub-10206,,,,
-sub-10217,0,-1,,lowquality
+sub-10217,0,-1,0,smooth
 sub-10225,-1,,,lowqualitysmoothartifact
 sub-10227,,,,
 sub-10228,0,,,smooth
@@ -28,7 +28,7 @@ sub-10329,0,,,
 sub-10339,0,,,smooth
 sub-10340,0,,,
 sub-10345,0,,,
-sub-10347,1,-1,,
+sub-10347,1,-1,1,
 sub-10348,-1,,,artifact
 sub-10356,,,,
 sub-10361,,,,
@@ -44,7 +44,7 @@ sub-10440,0,,,
 sub-10448,0,,,lowqualityerror
 sub-10455,0,0,-1,lowquality
 sub-10460,,,,
-sub-10471,0,,,smooth
+sub-10471,0,0,,smooth
 sub-10478,0,,,
 sub-10487,0,1,,smooth
 sub-10492,0,-1,,artifact
@@ -56,14 +56,14 @@ sub-10524,-1,0,,lowqualityartifact
 sub-10525,0,,,
 sub-10527,-1,-1,,lowquality
 sub-10530,-1,-1,,lowquality
-sub-10557,0,0,,
+sub-10557,0,0,0,lowquality
 sub-10565,,,,
 sub-10570,0,,,
 sub-10575,0,,,lowquality
 sub-10624,-1,,,smooth
 sub-10629,-1,,,
 sub-10631,-1,,,error
-sub-10638,0,0,,smooth
+sub-10638,0,0,-1,artifacterror
 sub-10668,0,0,1,artifact
 sub-10672,0,1,1,
 sub-10674,0,1,0,
@@ -88,7 +88,7 @@ sub-10785,,,,
 sub-10788,,,,
 sub-10844,,,,
 sub-10855,,,,
-sub-10871,1,,,
+sub-10871,1,0,,
 sub-10877,,,,
 sub-10882,-1,-1,,lowqualityartifact
 sub-10891,-1,,,lowqualityerror
@@ -102,7 +102,7 @@ sub-10958,,,,
 sub-10963,0,0,0,
 sub-10968,,,,
 sub-10971,,,,
-sub-10975,0,-1,,lowquality
+sub-10975,0,-1,0,lowquality
 sub-10977,,,,
 sub-10987,-1,,,smooth
 sub-10998,,,,
@@ -141,7 +141,7 @@ sub-50003,-1,,,lowqualityartifact
 sub-50004,-1,-1,,lowqualitysmoothartifact
 sub-50005,-1,-1,-1,lowqualityartifact
 sub-50006,,,,
-sub-50007,0,1,,
+sub-50007,0,1,1,
 sub-50008,,,,
 sub-50010,-1,0,,lowquality
 sub-50013,0,,,lowqualityartifact
@@ -187,7 +187,7 @@ sub-50066,1,0,,smooth
 sub-50067,0,,,
 sub-50069,1,,,
 sub-50071,,,,
-sub-50073,-1,,,smooth
+sub-50073,-1,0,,smooth
 sub-50075,-1,,,smooth
 sub-50076,0,0,,lowqualityartifact
 sub-50077,-1,1,0,smooth
@@ -217,8 +217,8 @@ sub-60037,0,,,
 sub-60038,0,,,lowquality
 sub-60042,0,,,error
 sub-60043,0,,,
-sub-60045,0,,,
-sub-60046,0,,,
+sub-60045,0,1,,
+sub-60046,0,-1,,lowqualityartifact
 sub-60048,0,,,smooth
 sub-60049,0,,,smooth
 sub-60051,0,1,1,smooth
@@ -240,7 +240,7 @@ sub-60076,0,,,artifact
 sub-60077,0,,,artifact
 sub-60078,-1,0,1,smooth
 sub-60079,0,-1,,lowqualitysmooth
-sub-60080,-1,,,lowquality
+sub-60080,-1,-1,,lowquality
 sub-60084,,,,
 sub-60087,-1,-1,,lowquality
 sub-60089,1,,,
