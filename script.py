@@ -24,7 +24,7 @@ file = list(csvreader)
 finished = [0.,0.,0.]
 hold = np.zeros((3,len(file)-1))
 hold[:] = np.nan
-total = len(file)
+total = 280
 for i in range(1,len(file)):
 	for j in range(1,4):
 		if len(file[i][j])>0:
