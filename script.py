@@ -46,7 +46,7 @@ for i in range(0,len(order)):
 	if curEnt <= 1:
 		# if less than 1, run the row
 		print('Check participant #' + file[row][0])
-		fname = os.getcwd()+'/gifs/'+file[row][0]
+		fname = os.getcwd()+'/abide/'+file[row][0]
 		if os.path.isfile(fname):
 			webbrowser.open('file://'+fname)
 			quality = raw_input("Quality? [-1/0/1/e/c] ")
@@ -61,6 +61,8 @@ for i in range(0,len(order)):
 			if quality=='e':
 				break
 			file[row][curEnt] = quality
+		else:
+			print('File does not exist')
 
 print('Writing file sinfo.csv')
 outfile = open('sinfo.csv','wb')
